@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -27,19 +27,25 @@ button {
     border: none;
     font-size: 16px;
     margin-right: 10px;
+    transition: 0.5s ease-in-out;
 } 
 button:hover {
     background-color: #bce3e2;
     transition: all 200ms ease-in-out;
     cursor: pointer;
+    color: #fff;
   }
-  .night i {
+  .fa-moon {
     color:rgb(31, 38, 41);
-    margin-left: 25%;
+    margin-left: 30%;
   }
   .night:hover {
     background-color: #546665;
   }
+  .night:hover fa-moon {
+    color: #fff;
+  }
+
 .content-wrapper {
     display: flex;
     justify-content: center;
@@ -83,6 +89,22 @@ a:hover {
     cursor: pointer;
     color:#56c5c3;
 }
+.fa-linkedin {
+    color: #0a63bc;
+}
+ul li img {
+    z-index: 2;
+    width: 150px;
+    position: absolute;
+    opacity: 0;
+    border: 1px solid black;
+    border-radius:0;
+    transition: 0.8s ease;
+}
+ul li:hover img{
+    opacity: 1;
+    transform: translateX(50%) translateY(-20%);
+}
 .course {
     display: flex;
     align-items: center;
@@ -107,6 +129,11 @@ main {
 }
 .section {
     margin: 14px 0 ;
+}
+.indicator::after {
+    content: "* ";
+    color: #56c5c3;
+    font-weight: 600;
 }
 ul,
 ol,
