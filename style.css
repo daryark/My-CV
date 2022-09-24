@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: #e6e6e6;
+}
+.container {
+    height: 1319px;
+    width:  1200px;
+    background: white;
+    padding: 30px 40px 40px 60px;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    position: sticky;
+    top: 3px;
+}
+button {
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    background: #f4ffff;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+} 
+button:hover {
+    background-color: #bce3e2;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+  }
+  .night i {
+    color:rgb(31, 38, 41);
+    margin-left: 25%;
+  }
+  .night:hover {
+    background-color: #546665;
+  }
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+h3 {
+    font-size: 16px;
+    color: #56c5c3;
+}
+/* Aside */
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+img {
+    border-radius: 50%;
+    margin: 30px 0;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+i {
+    margin-right: 12px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    cursor: pointer;
+    color:#56c5c3;
+}
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transform: translate(-15px, 0%);
+}
+.course img {
+    margin: 0;
+}
+.course a {
+    font-size: 20px;
+}
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%; 
+    margin-left: 60px;
+}
+.header {
+    margin: 30px 0;
+}
+.section {
+    margin: 14px 0 ;
+}
+ul,
+ol,
+.skill h3 {
+    padding-inline-start: 18px;
+}
+li {
+    line-height: 24px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.skill {
+    margin-right: 40px;
+}
+.skill li {
+    line-height: 18px;
+}
+ol {
+    margin-right: 25px;
+}
