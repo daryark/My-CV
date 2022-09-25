@@ -49,7 +49,6 @@ button {
     color: var(--primary-color)
 } 
 button:hover {
-    /* background: #bce3e2; */
     transition: all 200ms ease-in-out;
     cursor: pointer;
     color: var(--background);
@@ -216,11 +215,4 @@ ol li {
 b {
     font-weight: 600;
     color: var(--b-color);
-}
-.letter-wrap {
-    
-/* display: none; */
-}
-.motivation-letter {
-
 }
