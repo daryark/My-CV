@@ -9,12 +9,17 @@
     --tertiary-color: #f4ffff;
     --background: #fff;
     --opacity-sun: 0;
-    --opacity-moon: 1;}
+    --opacity-moon: 1;
+    --moon-index: 1;
+    --sun-index: -1;
+}
 .dark-theme {
     --primary-color: #fff;
     --tertiary-color: #2a3737;
     --background: #1f2629;
     --b-color: #bce3e2;
+    --moon-index: -1;
+    --sun-index: 1;
 }
 body {
     background: #e6e6e6;
@@ -60,11 +65,13 @@ button:hover {
 .fa-moon {
     opacity:var(--opacity-moon);
     transform: translateX(10px);
+    z-index: var(--moon-index);
     
   }
 .fa-sun {
     opacity: var(--opacity-sun);
     transform: translateX(-10px);
+    z-index:var(--sun-index) ;
   }
 
 .content-wrapper {
