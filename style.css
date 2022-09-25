@@ -9,24 +9,19 @@
     --tertiary-color: #f4ffff;
     --background: #fff;
     --opacity-sun: 0;
-    --opacity-moon: 1;
-    --moon-index: 1;
-    --sun-index: -1;
-}
+    --opacity-moon: 1;}
 .dark-theme {
     --primary-color: #fff;
     --tertiary-color: #2a3737;
     --background: #1f2629;
     --b-color: #bce3e2;
-    --moon-index: -1;
-    --sun-index: 1;
 }
 body {
     background: #e6e6e6;
 }
 .container {
-    height: 1319px;
-    width:  1200px;
+    height: 1340px;
+    width:  1170px;
     background: var(--background);
     padding: 30px 40px 40px 60px;
     margin: 0 auto;
@@ -46,7 +41,7 @@ button {
     background: var(--tertiary-color);
     border: none;
     font-size: 16px;
-    margin-right: 10px;
+    margin-right: 16px;
     transition: 0.5s ease-in-out;
     color: var(--primary-color)
 } 
@@ -65,13 +60,11 @@ button:hover {
 .fa-moon {
     opacity:var(--opacity-moon);
     transform: translateX(10px);
-    z-index: var(--moon-index);
     
   }
 .fa-sun {
     opacity: var(--opacity-sun);
     transform: translateX(-10px);
-    z-index:var(--sun-index) ;
   }
 
 .content-wrapper {
@@ -100,6 +93,7 @@ aside {
 img {
     border-radius: 50%;
     margin: 30px 0;
+    transform: translate(-15px, 0%);
 }
 .contact {
     display: flex;
@@ -120,7 +114,11 @@ a:hover {
 .section i {
     margin-right: 12px;
 }
-ul li img {
+.none {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+ol li img {
     width: 200px;
     position: absolute;
     opacity: 0;
@@ -128,7 +126,7 @@ ul li img {
     border-radius: 5px;
     transition: 1s ease;
 }
-ul li:hover img{
+ol li:hover img{
     opacity: 1;
     transform: translateX(20%) translateY(-25px);
 }
@@ -136,7 +134,7 @@ ul li:hover img{
     display: flex;
     align-items: center;
     justify-content: left;
-    transform: translate(-15px, 0%);
+    
 }
 .course img {
     margin: 0;
@@ -149,7 +147,7 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 70%; 
-    margin-left: 60px;
+    margin-left: 50px;
 }
 .header {
     margin: 30px 0;
