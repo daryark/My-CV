@@ -23,7 +23,7 @@ body {
     background: #e6e6e6;
 }
 .container {
-    height: 1340px;
+    height: 1350px;
     width:  1170px;
     background: var(--background);
     padding: 30px 40px 40px 60px;
@@ -35,7 +35,7 @@ nav {
     display: flex;
     flex-direction: row-reverse;
     position: sticky;
-    top: 3px;
+    top: 0;
 }
 button {
     height: 50px;
@@ -53,9 +53,26 @@ button:hover {
     cursor: pointer;
     color: var(--background);
   }
-.night:hover {
-    background: var(--primary-color);
-}
+  .language span {
+      padding: 5px;
+      background: #ffa9b6;
+      font-size: 14px;
+      border-radius: 4px;
+      width:170px;
+      position: absolute;
+      transform: translateX(-40%) translateY(60px);
+      opacity: 0;
+      transition: 0.8s ease;
+  
+  }
+  .language:hover span{
+      opacity: 1;
+      transform: translateX(-60%) translateY(60px);
+      color:var(--primary-color);
+  }
+  .night:hover {
+      background: var(--primary-color);
+    }
 .night:hover .fa-moon {
     color: var(--background);
 }
@@ -76,7 +93,7 @@ button:hover {
 }
 h1 {
     font-size: 40px;
-    margin: 10px 0;
+    margin-top: 10px;
 }
 h2 {
     font-size: 22px;
@@ -127,10 +144,11 @@ ol li img {
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     transition: 1s ease;
+    transform:translateY(-30px);
 }
 ol li:hover img{
     opacity: 1;
-    transform: translateX(20%) translateY(-25px);
+    transform: translateX(20%) translateY(-30px);
 }
 .course {
     display: flex;
@@ -152,7 +170,7 @@ main {
     margin-left: 50px;
 }
 .header {
-    margin: 30px 0;
+    margin-top: 30px;
 }
 .section {
     margin: 14px 0 ;
@@ -166,8 +184,8 @@ main {
     color: var(--secondary-color);
     font-weight: 600;
 }
-ul li span,
-.indicator-h2 span {
+/* .indicator-h2 span, */
+ul li span {
     padding: 10px 5px 10px 10px;
     background: var(--tertiary-color);
     font-size: 12px;
@@ -177,16 +195,16 @@ ul li span,
     opacity: 0;
     transition: 0.8s ease;
 }
-ul li:hover span,
-h2:hover span{
+/* h2:hover span, */
+ul li:hover span {
     opacity: 1;
-    transform: translateX(12%) translateY(15px);
+    transform: translateX(-12%) translateY(10px);
 }
-.indicator-h2::after {
+/* .indicator-h2::after {
     content: "*";
     color: #e95a94;
     font-weight: 600;
-}
+} */
 
 ul,
 ol,
