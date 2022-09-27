@@ -1,2 +1,2 @@
 # My-CV
-CV's dark&linght modes done, doing EN version now.
+CV's on Ukrainian with dark&linght modes done, doing English version now.
