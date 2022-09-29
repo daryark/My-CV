@@ -159,7 +159,8 @@ ol li:hover img{
 .course img {
     margin: 0;
 }
-.course a {
+.course a,
+.course-p {
     font-size: 20px;
 }
 /* Main */
