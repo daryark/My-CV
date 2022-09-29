@@ -143,12 +143,12 @@ ol li img {
     opacity: 0;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
-    transition: 1s ease;
-    transform:translateY(-30px);
+    transition: 1s ease-out;
+    transform: translateX(-200%) translateY(-30px);
 }
 ol li:hover img{
     opacity: 1;
-    transform: translateX(20%) translateY(-30px);
+    transform: translateX(-10%) translateY(-30px);
 }
 .course {
     display: flex;
