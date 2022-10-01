@@ -4,7 +4,7 @@ dayNight.addEventListener("click", darkTheme);
 
 function darkTheme() {
     document.body.classList.toggle("dark-theme");
-};
+}
 
 // Obj data - ukrainian and english content translation
 // and inside function to change lang
@@ -72,8 +72,7 @@ english: {
     developFaster: "It helps to get knowledge and become a developer faster",
     constantPractice: "Constant practive makes knowledge become solid",
     goit: "GoIT school has a handy LMS and good mentors to make learning great",
-    goitPopup: "You are really the best ❤ I want to  from the best!",
-    goitB: "learn",
+    goitPopup: "You are really the best ❤ I want to learn from the best!",
     whyMe: "WHY ME?",
     learnedBasics: "I've already learned basics and make a few projects",
     knowWhy: "I know WHY to become a Developer",
@@ -124,14 +123,13 @@ changeLang(){
     developFaster.textContent=(data[langContent].developFaster);
     constantPractice.textContent=(data[langContent].constantPractice);
     goit.textContent=(data[langContent].goit);
-    // goitPopup.textContent=(data[langContent].goitPopup);
-    // goitB.textContent=(data[langContent].goitB);
     whyMe.textContent=(data[langContent].whyMe);
     learnedBasics.textContent=(data[langContent].learnedBasics);
     knowWhy.textContent=(data[langContent].knowWhy);
-    // knowWhyPopup.textContent=(data[langContent].knowWhyPopup);
+    knowWhyPopup.textContent=(data[langContent].knowWhyPopup);
     windows.textContent=(data[langContent].windows);
-    // windowsPopup.textContent=(data[langContent].windowsPopup)
+    windowsPopup.textContent=(data[langContent].windowsPopup);
+    goitPopup.textContent=(data[langContent].goitPopup);
     developUkraine.textContent=(data[langContent].developUkraine);
     skills.textContent=(data[langContent].skills);
     htmlBasics.textContent=(data[langContent].htmlBasics);
@@ -154,11 +152,10 @@ changeLang(){
     createB.textContent=(data[langContent].createB);
     create.textContent=(data[langContent].create);
 },
-};
-
+}
+// Language button EventListener()
 let lang = document.getElementById("lang");
 lang.addEventListener("click", data.changeLang);
-
 
 // All elements querySelectors()
 let contacts = document.querySelector(".contacts");
@@ -176,8 +173,7 @@ let fulltime = document.querySelector(".fulltime");
 let developFaster = document.querySelector(".develop-faster");
 let constantPractice = document.querySelector(".constant-practice");
 let goit = document.querySelector(".goit");
-let goitPopup = document.querySelector(".goitPopup");
-let goitB = document.querySelector("goit-b");
+let goitPopup = document.querySelector(".goit-popup");
 let whyMe = document.querySelector(".why-me");
 let learnedBasics = document.querySelector(".learned-basics");
 let knowWhy = document.querySelector(".know-why");
@@ -205,4 +201,3 @@ let workInTeamB = document.querySelector(".work-in-team-b");
 let workInTeam = document.querySelector(".work-in-team");
 let create = document.querySelector(".create");
 let createB = document.querySelector(".create-b");
-
