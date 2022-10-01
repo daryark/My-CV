@@ -48,10 +48,12 @@ ukrainian: {
     touchTypingSpeed: "~ 40wpm швидкість",
     experience: "ДОСВІД",
     learned: "ЗА ЧАС РОБОТИ Я НАВЧИЛАСЬ:",
-    studyFast: "Швидко вчитись та отримувати результати</b> (Підписала великий контракт на послуги компанії в перший місяць роботи)",
-    workInTeam: "Працювати в команді і вигравати разом</b> (команда з 15 людей)",
-    create: "Створювати нові можливості (Почала створювати і продавати іграшки дітям, котрі хотіли щось, чого в інших нема! Це підвищило прибуток та мінімізувало простої у ранковий час. Працювала інструктором з малювання 3D-ручками)",
-
+    studyFastB: "Швидко вчитись та отримувати результати",
+    studyFast: " (Підписала великий контракт на послуги компанії в перший місяць роботи)",
+    workInTeamB: "Працювати в команді і вигравати разом",
+    workInTeam: " (команда з 15 людей)",
+    createB: "Створювати нові можливості",
+    create: " (Почала створювати і продавати іграшки дітям, котрі хотіли щось, чого в інших нема! Це підвищило прибуток та мінімізувало простої у ранковий час. Працювала інструктором з малювання 3D-ручками)",
     },
 english: {
     language:  "UA",
@@ -93,9 +95,12 @@ english: {
     touchTypingSpeed: "~ 40wpm speed",
     experience: "EXPERIENCE",
     learned: "WHILE WORKING I LEARNED TO:",
-    studyFast: "Study fast and get results (signed a big contract to the company's service in first month)",
-    workInTeam: "Work in team and win together as a complex unit (team of 15 people)",
-    create: "Create new opportunities (started to make and sell toys to the kids who want a special one. It increased the profit and minimize dead times during the mornings. Worked as a 3D-Pen  art teacher)",
+    studyFastB: "Study fast and get results",
+    studyFast: " (signed a big contract to the company's service in first month)",
+    workInTeamB: "Work in team and win together as a complex unit",
+    workInTeam: " (team of 15 people)",
+    createB: "Create new opportunities",
+    create: " (started to make and sell toys to the kids who want a special one. It increased the profit and minimize dead times during the mornings. Worked as a 3D-Pen  art teacher)",
 },
 changeLang(){
     let langContent = document.getElementById("lang").className;
@@ -142,10 +147,12 @@ changeLang(){
     touchTypingSpeed.textContent=(data[langContent].touchTypingSpeed);
     experience.textContent=(data[langContent].experience);
     learned.textContent=(data[langContent].learned);
+    studyFastB.textContent=(data[langContent].studyFastB);
     studyFast.textContent=(data[langContent].studyFast);
+    workInTeamB.textContent=(data[langContent].workInTeamB);
     workInTeam.textContent=(data[langContent].workInTeam);
+    createB.textContent=(data[langContent].createB);
     create.textContent=(data[langContent].create);
-    return;
 },
 };
 
@@ -192,7 +199,10 @@ let touchTyping = document.querySelector(".touch-typing");
 let touchTypingSpeed = document.querySelector(".touch-typing-speed");
 let experience = document.querySelector(".experience");
 let learned = document.querySelector(".learned");
+let studyFastB = document.querySelector(".study-fast-b");
 let studyFast = document.querySelector(".study-fast");
+let workInTeamB = document.querySelector(".work-in-team-b");
 let workInTeam = document.querySelector(".work-in-team");
 let create = document.querySelector(".create");
+let createB = document.querySelector(".create-b");
 
