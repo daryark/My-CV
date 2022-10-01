@@ -8,6 +8,7 @@
     --secondary-color: #56c5c3;
     --tertiary-color: #f4ffff;
     --background: #fff;
+    --button-hover: #bce3e2;
     --opacity-sun: 0;
     --opacity-moon: 1;
 }
@@ -16,6 +17,7 @@
     --tertiary-color: #2a3737;
     --background: #1f2629;
     --b-color: #bce3e2;
+    --button-hover: #56c5c3;
     --opacity-sun: 1;
     --opacity-moon: 0;
 }
@@ -52,25 +54,9 @@ button:hover {
     transition: all 200ms ease-in-out;
     cursor: pointer;
     color: var(--background);
+    background: var(--button-hover);
   }
-  .language span {
-      padding: 5px;
-      background: #ffa9b6;
-      font-size: 14px;
-      border-radius: 4px;
-      width:170px;
-      position: absolute;
-      transform: translateX(-40%) translateY(60px);
-      opacity: 0;
-      transition: 0.8s ease;
-  
-  }
-  .language:hover span{
-      opacity: 1;
-      transform: translateX(-60%) translateY(60px);
-      color:var(--primary-color);
-  }
-  .night:hover {
+.night:hover {
       background: var(--primary-color);
     }
 .night:hover .fa-moon {
@@ -79,13 +65,11 @@ button:hover {
 .fa-moon {
     opacity:var(--opacity-moon);
     transform: translateX(10px);
-    
   }
 .fa-sun {
     opacity: var(--opacity-sun);
     transform: translateX(-10px);
   }
-
 .content-wrapper {
     display: flex;
     justify-content: center;
@@ -176,8 +160,7 @@ main {
 .section {
     margin: 14px 0 ;
 }
-.indicator,
-.indicator-h2 {
+.indicator {
     cursor: pointer;
 }
 .indicator::after {
@@ -185,38 +168,25 @@ main {
     color: var(--secondary-color);
     font-weight: 600;
 }
-/* .indicator-h2 span, */
-.temporary,
-ul li span {
+.goit-popup,
+.windows-popup,
+.know-why-popup {
     padding: 10px;
     background: var(--tertiary-color);
     font-size: 12px;
+    font-weight: 600;
     border-radius: 4px;
-    max-width: 350px;
+    max-width: 470px;
     position: absolute;
     opacity: 0;
     transition: 0.8s ease;
 }
-/* h2:hover span, */
-ul li:hover span {
+ul li:hover .goit-popup,
+ul li:hover .windows-popup,
+ul li:hover .know-why-popup {
     opacity: 1;
     transform: translateX(5%) translateY(10px);
 }
-.temporary {
-    display: none;
-}
-.course a:hover span {
-    opacity: 1;
-    display: initial;
-    transform: translateX(-40%) translateY(40px);
-    color: var(--primary-color);
-}
-/* .indicator-h2::after {
-    content: "*";
-    color: #e95a94;
-    font-weight: 600;
-} */
-
 ul,
 ol,
 .skill h3 {
