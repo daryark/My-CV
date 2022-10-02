@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -173,8 +173,9 @@ main {
 .know-why-popup {
     padding: 10px;
     background: var(--tertiary-color);
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.8em;
+    font-weight: 500;
     border-radius: 4px;
     max-width: 470px;
     position: absolute;
@@ -184,7 +185,7 @@ main {
 ul li:hover .goit-popup,
 ul li:hover .windows-popup,
 ul li:hover .know-why-popup {
-    opacity: 1;
+opacity: 1;
     transform: translateX(5%) translateY(10px);
 }
 ul,
