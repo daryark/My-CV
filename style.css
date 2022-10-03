@@ -25,7 +25,6 @@ body {
     background: #e6e6e6;
 }
 .container {
-    height: 1350px;
     width:  1170px;
     background: var(--background);
     padding: 30px 40px 40px 60px;
@@ -38,6 +37,7 @@ nav {
     flex-direction: row-reverse;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 button {
     height: 50px;
@@ -50,18 +50,6 @@ button {
     transition: 0.5s ease-in-out;
     color: var(--primary-color);
 } 
-button:hover {
-    transition: all 200ms ease-in-out;
-    cursor: pointer;
-    color: var(--background);
-    background: var(--button-hover);
-  }
-.night:hover {
-      background: var(--primary-color);
-    }
-.night:hover .fa-moon {
-    color: var(--background);
-}
 .fa-moon {
     opacity:var(--opacity-moon);
     transform: translateX(10px);
@@ -93,10 +81,15 @@ aside {
     flex-direction: column;
     width: 30%;
 }
-img {
-    border-radius: 50%;
-    margin: 30px 0;
-    transform: translate(-15px, 0%);
+.user-mob{
+  display: none;
+}
+.user, .user-mob {
+  border-radius: 50%;
+  margin: 30px 0;
+  transform: translateX(-15px);
+  width: 280px;
+  height: 280px;
 }
 .contact {
     display: flex;
@@ -106,10 +99,6 @@ img {
 a {
     text-decoration: none;
     color: var(--primary-color);
-}
-a:hover {
-    cursor: pointer;
-    color:var(--secondary-color);
 }
 .fa-linkedin {
     color: #0a63bc;
@@ -130,18 +119,21 @@ ol li img {
     transition: 1s ease-out;
     transform: translateX(-200%) translateY(-30px);
 }
-ol li:hover img{
-    opacity: 1;
-    transform: translateX(-10%) translateY(-30px);
-}
 .course {
     display: flex;
     align-items: center;
-    justify-content: left;
-    
+    justify-content: left; 
 }
 .course img {
-    margin: 0;
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+.shecodes {
+  transform: translateX(-10px);
+}
+.course a {
+  transform: translateX(-20px);
 }
 .course a,
 .course-p {
@@ -182,12 +174,6 @@ main {
     opacity: 0;
     transition: 0.8s ease;
 }
-ul li:hover .goit-popup,
-ul li:hover .windows-popup,
-ul li:hover .know-why-popup {
-opacity: 1;
-    transform: translateX(5%) translateY(10px);
-}
 ul,
 ol,
 .skill h3 {
@@ -216,3 +202,114 @@ b {
     font-weight: 600;
     color: var(--b-color);
 }
+
+
+/* Mobile version*/
+@media screen and (max-width: 700px) {
+  body {
+    display: flex;
+}
+.container {
+    width:100%;
+    padding: 0;
+}
+.content-wrapper {
+    flex-direction: column-reverse;
+    margin: 20px;
+}
+nav {
+  padding-top: 10px;
+}
+h1 {
+    font-size: 34px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 14px;
+}
+/* Aside */
+aside {
+    flex-direction: column-reverse;
+    width: 100%;
+}
+.aside-mob {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 20px;
+  justify-content: center;
+}
+.user {
+    display: none;
+}
+.course a,
+.course-p {
+  font-size: 18px;
+}
+/* Main */
+main {
+  max-width: 100%; 
+  margin-left: 0;
+}
+.user-mob {
+  transform: translate(0);
+  display: initial;
+  width: 100px;
+  height: 100px;
+}
+.header {
+  display: flex;
+  align-content: center;
+  margin-top: 0;
+}
+.header-mob {
+  margin-left: 20px;
+}
+.section {
+    margin-top:0;
+}
+li {
+    line-height: 20px;
+    margin: 10px 0;
+}
+.grid {
+    grid-template-columns: repeat(2,1fr);
+}
+.skill {
+    margin-right: 0;
+}
+ol {
+    margin-right: 0;
+}
+} 
+
+@media (hover:hover) {
+ button:hover {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  color: var(--background);
+  background: var(--button-hover);
+}
+.night:hover {
+    background: var(--primary-color);
+  }
+.night:hover .fa-moon {
+  color: var(--background);
+}
+a:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+ol li:hover img{
+  opacity: 1;
+  transform: translateX(-10%) translateY(-30px);
+}
+ul li:hover .goit-popup,
+ul li:hover .windows-popup,
+ul li:hover .know-why-popup {
+opacity: 1;
+    transform: translateX(5%) translateY(10px);
+} 
+}
+
